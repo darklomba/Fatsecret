@@ -8,4 +8,12 @@ Gem::Specification.new do |s|
   s.email       = 'ibrahim.mohammad@gmail.com'
   s.files       = ["lib/fatsecret.rb"]
   s.homepage    = 'http://www.github.com/whistler/fatsecret'
+  
+  s.add_runtime_dependency 'json', '~> 1.5'
+  s.add_runtime_dependency 'activemodel', '~> 3.0'
+  
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'vcr'
+  s.add_development_dependency 'fakeweb'
 end
