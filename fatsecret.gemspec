@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'fatsecret-models'
-  s.version     = '0.1.0'
+  s.version     = '0.1.1'
   s.date        = '2012-08-21'
   s.summary     = "An active_model compliant wrapper for FatSecret API"
   s.description = "An active_model compliant wrapper for FatSecret API"
