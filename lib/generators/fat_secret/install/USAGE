@@ -1,0 +1,8 @@
+Description:
+    installs an initializer.  Should be modified to include your api information
+
+Example:
+    rails generate fatsecret::install
+
+    This will create:
+        config/initializers/fatsecret.rb
