@@ -36,8 +36,8 @@ You must set up configuration before instantiating any of the FatSecret classes:
 
 ```ruby
 FatSecret.configure do |config|
-  config.api_key = \<your key\>
-  config.api_secret = \<your secret key\>
+  config.api_key = <your key>
+  config.api_secret = <your secret key>
 end
 ```  
 
