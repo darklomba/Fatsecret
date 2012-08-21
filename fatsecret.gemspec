@@ -1,14 +1,14 @@
 Gem::Specification.new do |s|
-  s.name        = 'fatsecret-api'
+  s.name        = 'fatsecret-models'
   s.version     = '0.1.0'
-  s.date        = '2012-02-19'
-  s.summary     = "Connects to FatSecret API and retreives nutritional data"
-  s.description = "A simple hello world gem"
-  s.authors     = ["Ibrahim Muhammad"]
-  s.email       = 'ibrahim.mohammad@gmail.com'
+  s.date        = '2012-08-21'
+  s.summary     = "An active_model compliant wrapper for FatSecret API"
+  s.description = "An active_model compliant wrapper for FatSecret API"
+  s.authors     = ["Joseph Jackson", "Ibrahim Muhammad"]
+  s.email       = 'cpmhjoe@gmail.com'
   s.files       = `git ls-files`.split("\n")
   s.require_paths = ["lib"]
-  s.homepage    = 'http://www.github.com/whistler/fatsecret'
+  s.homepage    = 'http://www.github.com/joeyjoejoejr/fatsecret'
   
   s.add_runtime_dependency 'json', '~> 1.5'
   s.add_runtime_dependency 'activemodel', '~> 3.0'

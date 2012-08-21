@@ -13,11 +13,11 @@ If you are using bundler, you put this in your Gemfile:
 
 ```ruby
 source :rubygems
-gem 'fatsecret-api', :git => 'https://github.com/joeyjoejoejr/Fatsecret.git',
-                     :branch => 'active_model'
+gem 'fatsecret-models', :git => 'https://github.com/joeyjoejoejr/Fatsecret.git'
 ```
-    
 Then run bundle install
+
+or `gem install fatsecret-models`
 
 Useage
 ------
