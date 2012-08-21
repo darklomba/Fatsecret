@@ -2,12 +2,16 @@ PATH
   remote: .
   specs:
     fatsecret-api (0.1.0)
+      active_attr
       activemodel (~> 3.0)
       json (~> 1.5)
 
 GEM
   remote: http://rubygems.org/
   specs:
+    active_attr (0.6.0)
+      activemodel (>= 3.0.2, < 4.1)
+      activesupport (>= 3.0.2, < 4.1)
     activemodel (3.2.8)
       activesupport (= 3.2.8)
       builder (~> 3.0.0)

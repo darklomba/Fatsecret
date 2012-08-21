@@ -6,11 +6,13 @@ Gem::Specification.new do |s|
   s.description = "A simple hello world gem"
   s.authors     = ["Ibrahim Muhammad"]
   s.email       = 'ibrahim.mohammad@gmail.com'
-  s.files       = ["lib/fatsecret.rb"]
+  s.files       = `git ls-files`.split("\n")
+  s.require_paths = ["lib"]
   s.homepage    = 'http://www.github.com/whistler/fatsecret'
   
   s.add_runtime_dependency 'json', '~> 1.5'
   s.add_runtime_dependency 'activemodel', '~> 3.0'
+  s.add_runtime_dependency 'active_attr'
   
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'

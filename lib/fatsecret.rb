@@ -8,6 +8,11 @@ require 'base64'
 
 #fatsecret files
 require 'fatsecret/connection'
+require 'fatsecret/relation'
+require 'fatsecret/models/base'
+require 'fatsecret/models/serving'
+require 'fatsecret/models/food'
+
 
 
 module FatSecret
@@ -22,12 +27,11 @@ module FatSecret
   end
   
   class Configuration
-    attr_accessor :api_key, :api_secret, :api_url, :methods
+    attr_accessor :api_key, :api_secret, :api_url, :api_methods, :oauth_token
     
-    def initialze
-      @api_key, @api_secret = nil
-      @api_url = "http://platform.fatsecret.com/keyrest/server.api"
-      @methods = %w{food recipe}
+    def initialize
+      @api_url = "http://platform.fatsecret.com/rest/server.api"
+      @api_methods = %w{food recipe}
     end
   end
 end 

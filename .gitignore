@@ -1,2 +1,4 @@
 *.gem
 keys.txt
+spec/vcr
+
