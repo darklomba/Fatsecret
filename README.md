@@ -24,7 +24,7 @@ Useage
 
 Rails:
 
-run `rails generate fatsecret::install`
+run `rails generate fat_secret::install`
 this will create a `fatsecret.rb` initializer file in `config/initializers`
 fill in your fatsecret key and secret.  Make sure to exclude this file from version control
 
