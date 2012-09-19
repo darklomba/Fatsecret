@@ -114,6 +114,10 @@ describe FatSecret::Food do
       @food_list.first.should_not be_valid
     end
     
+    it "shouldn't fail with a bad search", :vcr do
+      FatSecret::Food.find_by_name("Baaaaaaaad").should eq []
+    end
+    
   end
   
   describe "reload" do

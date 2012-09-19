@@ -25,8 +25,10 @@ module FatSecret
     def self.find_by_name(name, args = {})
       results = connection.search(api_method, name, args)
       return_results = []
-      results['foods']['food'].each do |food|
-        return_results.push self.new food
+      if results && results['foods'] && results['foods']['food']
+        results['foods']['food'].each do |food|
+          return_results.push self.new food
+        end
       end
       return_results
     end
