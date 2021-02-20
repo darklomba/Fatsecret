@@ -11,7 +11,6 @@ Gem::Specification.new do |s|
   s.homepage    = 'http://www.github.com/joeyjoejoejr/fatsecret'
   
   s.add_runtime_dependency 'json', '~> 1.5'
-  s.add_runtime_dependency 'activemodel', '~> 3.0'
   s.add_runtime_dependency 'active_attr'
   
   s.add_development_dependency 'rake'
